@@ -1,0 +1,46 @@
+# uikit-samples module
+
+
+## common package
+- SplashActivity
+- SelectServiceActivity
+- LoginActivity
+- FeatureActivity extends ThemeHomeActivity (ThemeHomeActivity extends AppCompatActivity)
+
+
+## basic package
+- BasicHomeActivity
+- GroupChannelMainActivity: FragmentProviders.channelList. & SampleSettingsFragment 
+- OpenChannelMainActivity
+
+#### SampleSettingsFragment
+- StateHeaderComponent
+- Widget xml
+
+#### FragmentProviders.channelList.
+- FragmentProviders.channelList
+
+
+## UIKit Architecture
+- Base: Chat SDK
+- Data + API: ViewModel
+- View: Activity - Fragment - Module - Components - Style/Res
+
+#### Data + API
+- ViewModel: ChannelListViewModel
+
+#### View
+- Activity: GroupChannelMainActivity
+- Fragment : FragmentProviders.channelList > ChannelListFragmentProvider > ChannelListFragment extends BaseModuleFragment
+- Module: ChannelListModule
+- Components: HeaderComponent - ChannelListComponent - StatusComponent
+
+
+
+
+
+
+
+
+
+
